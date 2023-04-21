@@ -2,7 +2,7 @@
  * Copyright (c) Huawei Technologies Co., Ltd. 2022-2022. All rights reserved.
  */
 
-package com.huawei.demo.health;
+package com.cuhk.fedcampus.health.health;
 
 import android.app.Notification;
 import android.app.NotificationChannel;

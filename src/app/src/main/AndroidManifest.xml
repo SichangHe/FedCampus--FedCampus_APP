@@ -24,9 +24,9 @@
 
         <meta-data
             android:name="com.huawei.hms.client.appid"
-            android:value="APP_ID" />
+            android:value="107416543" />
 
-        <activity android:name="com.huawei.demo.health.HealthKitMainActivity">
+        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitMainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
@@ -35,19 +35,19 @@
             </intent-filter>
         </activity>
 
-        <activity android:name="com.huawei.demo.health.HealthKitDataControllerActivity" />
-        <activity android:name="com.huawei.demo.health.HealthKitAutoRecorderControllerActivity" />
-        <activity android:name="com.huawei.demo.health.HealthKitActivityRecordControllerActivity" />
-        <activity android:name="com.huawei.demo.health.HealthKitSettingControllerActivity" />
-        <activity android:name="com.huawei.demo.health.auth.HealthKitAuthActivity" />
-        <activity android:name="com.huawei.demo.health.HealthKitHealthRecordControllerActivity" />
+        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitDataControllerActivity" />
+        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitAutoRecorderControllerActivity" />
+        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitActivityRecordControllerActivity" />
+        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitSettingControllerActivity" />
+        <activity android:name="com.cuhk.fedcampus.health.health.auth.HealthKitAuthActivity" />
+        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitHealthRecordControllerActivity" />
 
-        <service android:name="com.huawei.demo.health.PersistService">
+        <service android:name="com.cuhk.fedcampus.health.health.PersistService">
             <intent-filter android:priority="1000">
                 <action android:name="HealthKitService" />
             </intent-filter>
         </service>
-        <service android:name="com.huawei.demo.health.ActivityRecordForegroundService" />
+        <service android:name="com.cuhk.fedcampus.health.health.ActivityRecordForegroundService" />
     </application>
 
 </manifest>

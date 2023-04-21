@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.huawei.demo.health;
+package com.cuhk.fedcampus.health.health;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;

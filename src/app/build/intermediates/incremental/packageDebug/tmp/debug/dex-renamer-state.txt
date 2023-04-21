@@ -1,0 +1,7 @@
+#Fri Apr 21 08:46:31 CST 2023
+base.1=D\:\\Code\\dku\\FedCampus_APP\\src\\app\\build\\intermediates\\dex\\debug\\mergeProjectDexDebug\\out\\classes.dex
+path.1=classes.dex
+base.0=D\:\\Code\\dku\\FedCampus_APP\\src\\app\\build\\intermediates\\dex\\debug\\mergeExtDexDebug\\out\\classes.dex
+renamed.1=classes2.dex
+renamed.0=classes.dex
+path.0=classes.dex

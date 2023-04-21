@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.huawei.demo.health;
+package com.cuhk.fedcampus.health.health;
 
 import java.text.DateFormat;
 import java.util.Arrays;
@@ -608,7 +608,7 @@ public class HealthKitActivityRecordControllerActivity extends AppCompatActivity
      */
     private Intent getForegroundServiceIntent() {
         Intent intent = new Intent();
-        intent.setClassName(getPackageName(), "com.huawei.demo.health.ActivityRecordForegroundService");
+        intent.setClassName(getPackageName(), "com.cuhk.fedcampus.health.health.ActivityRecordForegroundService");
         return intent;
     }
 }

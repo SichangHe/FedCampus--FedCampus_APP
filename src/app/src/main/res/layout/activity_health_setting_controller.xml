@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.huawei.demo.health.HealthKitSettingControllerActivity"
+    tools:context="com.cuhk.fedcampus.health.health.HealthKitSettingControllerActivity"
     tools:ignore="MissingDefaultResource">
 
     <LinearLayout

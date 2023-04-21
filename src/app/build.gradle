@@ -1,11 +1,25 @@
 apply plugin: 'com.android.application'
-
+apply plugin: 'com.huawei.agconnect'
 
 android {
+    signingConfigs {
+        key {
+            storeFile file('D:\\Code\\dku\\key.keystore')
+            storePassword 'gaimima940137'
+            keyAlias 'Key'
+            keyPassword 'gaimima940137'
+        }
+        debug {
+            storeFile file('D:\\Code\\dku\\FedCampus_APP\\key.keystore')
+            storePassword 'gaimima940137'
+            keyAlias 'Key'
+            keyPassword 'gaimima940137'
+        }
+    }
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
     defaultConfig {
-        applicationId "com.huawei.healthkit.demo"
+        applicationId "com.cuhk.fedcampus"
         minSdkVersion 24
         targetSdkVersion 29
         versionCode 1

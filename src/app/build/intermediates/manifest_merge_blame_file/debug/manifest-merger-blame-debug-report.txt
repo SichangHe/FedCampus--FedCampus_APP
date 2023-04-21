@@ -1,0 +1,292 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.cuhk.fedcampus"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+8-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="29" />
+9-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+11-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:5:5-79
+11-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+12-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:6:5-79
+12-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:6:22-76
+13    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+13-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:7:5-74
+13-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:7:22-71
+14    <uses-permission android:name="android.permission.BLUETOOTH" />
+14-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:8:5-68
+14-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:8:22-65
+15    <uses-permission android:name="android.permission.BODY_SENSORS" />
+15-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:9:5-71
+15-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:9:22-68
+16    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+16-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:11:5-79
+16-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:11:22-76
+17    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+17-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:12:5-77
+17-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:12:22-74
+18    <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
+18-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:13:5-95
+18-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:13:22-92
+19    <uses-permission android:name="android.permission.WAKE_LOCK" />
+19-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:14:5-68
+19-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:14:22-65
+20    <uses-permission android:name="android.permission.INTERNET" />
+20-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:15:5-66
+20-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:15:22-64
+21
+22    <queries>
+22-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:11:5-13:15
+23        <package android:name="com.huawei.health" />
+23-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:12:9-53
+23-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:12:18-50
+24
+25        <intent>
+25-->[com.huawei.hms:device:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\60a537e390bb2a487740846e816ade02\device-6.4.0.302\AndroidManifest.xml:15:9-17:18
+26            <action android:name="com.huawei.hms.core.aidlservice" />
+26-->[com.huawei.hms:device:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\60a537e390bb2a487740846e816ade02\device-6.4.0.302\AndroidManifest.xml:16:13-70
+26-->[com.huawei.hms:device:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\60a537e390bb2a487740846e816ade02\device-6.4.0.302\AndroidManifest.xml:16:21-67
+27        </intent>
+28        <intent>
+28-->[com.huawei.hms:device:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\60a537e390bb2a487740846e816ade02\device-6.4.0.302\AndroidManifest.xml:15:9-17:18
+29            <action android:name="com.huawei.hms.core" />
+30        </intent>
+31    </queries>
+32
+33    <application
+33-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:17:5-51:19
+34        android:allowBackup="true"
+34-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:18:9-35
+35        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+35-->[androidx.core:core:1.5.0] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\c14b3652799fb185d5e6631c87a854a1\core-1.5.0\AndroidManifest.xml:24:18-86
+36        android:debuggable="true"
+37        android:icon="@mipmap/ic_launcher"
+37-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:19:9-43
+38        android:label="@string/app_name"
+38-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:20:9-41
+39        android:roundIcon="@mipmap/ic_launcher_round"
+39-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:21:9-54
+40        android:supportsRtl="true"
+40-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:22:9-35
+41        android:testOnly="true"
+42        android:theme="@style/AppTheme" >
+42-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:23:9-40
+43        <meta-data
+43-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:25:9-27:41
+44            android:name="com.huawei.hms.client.appid"
+44-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:26:13-55
+45            android:value="107416543" />
+45-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:27:13-38
+46
+47        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitMainActivity" >
+47-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:29:9-36:20
+47-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:29:19-88
+48            <intent-filter>
+48-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:30:13-35:29
+49                <action android:name="android.intent.action.VIEW" />
+49-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:31:17-69
+49-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:31:25-66
+50                <action android:name="android.intent.action.MAIN" />
+50-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:32:17-69
+50-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:32:25-66
+51
+52                <category android:name="android.intent.category.LAUNCHER" />
+52-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:34:17-77
+52-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:34:27-74
+53            </intent-filter>
+54        </activity>
+55        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitDataControllerActivity" />
+55-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:38:9-101
+55-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:38:19-98
+56        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitAutoRecorderControllerActivity" />
+56-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:39:9-109
+56-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:39:19-106
+57        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitActivityRecordControllerActivity" />
+57-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:40:9-111
+57-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:40:19-108
+58        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitSettingControllerActivity" />
+58-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:41:9-104
+58-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:41:19-101
+59        <activity android:name="com.cuhk.fedcampus.health.health.auth.HealthKitAuthActivity" />
+59-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:42:9-96
+59-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:42:19-93
+60        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitHealthRecordControllerActivity" />
+60-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:43:9-109
+60-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:43:19-106
+61
+62        <service android:name="com.cuhk.fedcampus.health.health.PersistService" >
+62-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:45:9-49:19
+62-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:45:18-80
+63            <intent-filter android:priority="1000" >
+63-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:46:13-48:29
+63-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:46:28-51
+64                <action android:name="HealthKitService" />
+64-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:47:17-59
+64-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:47:25-56
+65            </intent-filter>
+66        </service>
+67        <service android:name="com.cuhk.fedcampus.health.health.ActivityRecordForegroundService" />
+67-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:50:9-100
+67-->D:\Code\dku\FedCampus_APP\src\app\src\main\AndroidManifest.xml:50:18-97
+68
+69        <activity
+69-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:16:9-19:75
+70            android:name="com.huawei.hms.hihealth.activity.HealthKitAuthHubActivity"
+70-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:17:13-85
+71            android:exported="false"
+71-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:18:13-37
+72            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+72-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:19:13-72
+73        <activity
+73-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:20:9-22:40
+74            android:name="com.huawei.hms.hihealth.activity.HealthKitWebViewActivity"
+74-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:21:13-85
+75            android:exported="false" />
+75-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:22:13-37
+76        <activity
+76-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:23:9-29:75
+77            android:name="com.huawei.hms.hihealth.activity.HealthKitTransparentActivity"
+77-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:24:13-89
+78            android:configChanges="orientation|screenSize"
+78-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:25:13-59
+79            android:exported="false"
+79-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:26:13-37
+80            android:launchMode="singleInstance"
+80-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:27:13-48
+81            android:screenOrientation="portrait"
+81-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:28:13-49
+82            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+82-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:29:13-72
+83
+84        <meta-data
+84-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:31:9-33:55
+85            android:name="com.huawei.hms.client.service.name:hihealth-base"
+85-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:32:13-76
+86            android:value="hihealth-base:6.5.0.300" />
+86-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:33:13-52
+87        <meta-data
+87-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:34:9-36:34
+88            android:name="com.huawei.hms.min_api_level:hihealth-base:hihealth"
+88-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:35:13-79
+89            android:value="13" />
+89-->[com.huawei.hms:health:6.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\e0818276477df4567d5d3812f29dd2df\health-6.5.0.300\AndroidManifest.xml:36:13-31
+90
+91        <activity
+91-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:10:9-16:20
+92            android:name="com.huawei.hms.hwid.internal.ui.activity.HwIdSignInHubActivity"
+92-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:11:13-90
+93            android:configChanges="fontScale|uiMode"
+93-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:12:13-53
+94            android:excludeFromRecents="true"
+94-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:13:13-46
+95            android:exported="false"
+95-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:14:13-37
+96            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+96-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:15:13-72
+97        </activity>
+98        <activity
+98-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:17:9-22:20
+99            android:name="com.huawei.hms.account.internal.ui.activity.AccountSignInHubActivity"
+99-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:18:13-96
+100            android:excludeFromRecents="true"
+100-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:19:13-46
+101            android:exported="false"
+101-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:20:13-37
+102            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+102-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:21:13-72
+103        </activity> <!-- 切记同步修改 HuaweiIdAuthInternalConstant.HMS_SDK_VERSION -->
+104        <meta-data
+104-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:25:9-27:46
+105            android:name="com.huawei.hms.client.service.name:hwid"
+105-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:26:13-67
+106            android:value="hwid:6.3.0.300" />
+106-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:27:13-43
+107        <meta-data
+107-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:28:9-30:33
+108            android:name="com.huawei.hms.min_api_level:hwid:hwid"
+108-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:29:13-66
+109            android:value="1" /> <!-- 5.3.0 独立授权依赖的api_level为11 -->
+109-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:30:13-30
+110        <!-- 5.3.0 setCarrierId依赖的api_level为13 -->
+111        <meta-data
+111-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:34:9-36:34
+112            android:name="com.huawei.hms.min_api_level:hwid:account"
+112-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:35:13-69
+113            android:value="13" /> <!-- 为后续统计第三方app集成了哪些Kit，因此需要Kit在自己的AndroidManifest.xml文件中定义业务标签元数据 -->
+113-->[com.huawei.hms:hwid:6.3.0.301] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\7330a3f1ca6685036d94abafd6f8b8c0\hwid-6.3.0.301\AndroidManifest.xml:36:13-31
+114        <meta-data
+114-->[com.huawei.hms:base:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\f156c84e75103ec3865710e3826cbd5f\base-6.4.0.302\AndroidManifest.xml:15:9-17:46
+115            android:name="com.huawei.hms.client.service.name:base"
+115-->[com.huawei.hms:base:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\f156c84e75103ec3865710e3826cbd5f\base-6.4.0.302\AndroidManifest.xml:16:13-67
+116            android:value="base:6.4.0.302" /> <!-- SDK依赖的HMSCore的最低api level元数据 -->
+116-->[com.huawei.hms:base:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\f156c84e75103ec3865710e3826cbd5f\base-6.4.0.302\AndroidManifest.xml:17:13-43
+117        <meta-data
+117-->[com.huawei.hms:base:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\f156c84e75103ec3865710e3826cbd5f\base-6.4.0.302\AndroidManifest.xml:20:9-22:33
+118            android:name="com.huawei.hms.min_api_level:base:hmscore"
+118-->[com.huawei.hms:base:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\f156c84e75103ec3865710e3826cbd5f\base-6.4.0.302\AndroidManifest.xml:21:13-69
+119            android:value="1" /> <!-- 用于判断是否集成了本lib -->
+119-->[com.huawei.hms:base:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\f156c84e75103ec3865710e3826cbd5f\base-6.4.0.302\AndroidManifest.xml:22:13-30
+120        <meta-data
+120-->[com.huawei.hms:availableupdate:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\6584cb3afe0bdf1c77231ff8f5f8d189\availableupdate-6.4.0.302\AndroidManifest.xml:17:9-19:35
+121            android:name="availableLoaded"
+121-->[com.huawei.hms:availableupdate:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\6584cb3afe0bdf1c77231ff8f5f8d189\availableupdate-6.4.0.302\AndroidManifest.xml:18:13-43
+122            android:value="yes" />
+122-->[com.huawei.hms:availableupdate:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\6584cb3afe0bdf1c77231ff8f5f8d189\availableupdate-6.4.0.302\AndroidManifest.xml:19:13-32
+123
+124        <activity
+124-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:10:9-21:20
+125            android:name="com.huawei.hms.activity.BridgeActivity"
+125-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:11:13-66
+126            android:configChanges="orientation|locale|layoutDirection|fontScale|screenSize|smallestScreenSize|screenLayout|uiMode"
+126-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:12:13-131
+127            android:excludeFromRecents="true"
+127-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:13:13-46
+128            android:exported="false"
+128-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:14:13-37
+129            android:hardwareAccelerated="true"
+129-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:15:13-47
+130            android:screenOrientation="behind"
+130-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:16:13-47
+131            android:theme="@style/Base_Translucent" >
+131-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:17:13-52
+132            <meta-data
+132-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:18:13-20:77
+133                android:name="hwc-theme"
+133-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:19:17-41
+134                android:value="androidhwext:style/Theme.Emui.Translucent" />
+134-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:20:17-74
+135        </activity>
+136        <activity
+136-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:22:9-26:20
+137            android:name="com.huawei.hms.activity.EnableServiceActivity"
+137-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:23:13-73
+138            android:configChanges="orientation|keyboardHidden|screenSize|smallestScreenSize|screenLayout"
+138-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:24:13-106
+139            android:exported="false" >
+139-->[com.huawei.hms:ui:6.4.0.302] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\474990db08e2ebc83d194a5c74ffa872\ui-6.4.0.302\AndroidManifest.xml:25:13-37
+140        </activity>
+141
+142        <provider
+142-->[com.huawei.agconnect:agconnect-core:1.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\afa4bbcf8b1f251399aa97d81ef3c3b4\jetified-agconnect-core-1.5.0.300\AndroidManifest.xml:11:9-14:40
+143            android:name="com.huawei.agconnect.core.provider.AGConnectInitializeProvider"
+143-->[com.huawei.agconnect:agconnect-core:1.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\afa4bbcf8b1f251399aa97d81ef3c3b4\jetified-agconnect-core-1.5.0.300\AndroidManifest.xml:12:13-90
+144            android:authorities="com.cuhk.fedcampus.AGCInitializeProvider"
+144-->[com.huawei.agconnect:agconnect-core:1.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\afa4bbcf8b1f251399aa97d81ef3c3b4\jetified-agconnect-core-1.5.0.300\AndroidManifest.xml:13:13-73
+145            android:exported="false" />
+145-->[com.huawei.agconnect:agconnect-core:1.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\afa4bbcf8b1f251399aa97d81ef3c3b4\jetified-agconnect-core-1.5.0.300\AndroidManifest.xml:14:13-37
+146
+147        <service
+147-->[com.huawei.agconnect:agconnect-core:1.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\afa4bbcf8b1f251399aa97d81ef3c3b4\jetified-agconnect-core-1.5.0.300\AndroidManifest.xml:16:9-18:40
+148            android:name="com.huawei.agconnect.core.ServiceDiscovery"
+148-->[com.huawei.agconnect:agconnect-core:1.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\afa4bbcf8b1f251399aa97d81ef3c3b4\jetified-agconnect-core-1.5.0.300\AndroidManifest.xml:17:13-70
+149            android:exported="false" />
+149-->[com.huawei.agconnect:agconnect-core:1.5.0.300] C:\Users\Beilong Tang\.gradle\caches\transforms-2\files-2.1\afa4bbcf8b1f251399aa97d81ef3c3b4\jetified-agconnect-core-1.5.0.300\AndroidManifest.xml:18:13-37
+150    </application>
+151
+152</manifest>

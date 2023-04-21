@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.huawei.demo.health.auth;
+package com.cuhk.fedcampus.health.health.auth;
 
 import java.util.Locale;
 

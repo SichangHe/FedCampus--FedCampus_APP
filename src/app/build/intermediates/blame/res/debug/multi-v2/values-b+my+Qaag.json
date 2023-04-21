@@ -1,0 +1,36 @@
+{
+    "logs": [
+        {
+            "outputFile": "D:\\Code\\dku\\FedCampus_APP\\src\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-b+my+Qaag\\values-b+my+Qaag.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Beilong Tang\\.gradle\\caches\\transforms-2\\files-2.1\\7330a3f1ca6685036d94abafd6f8b8c0\\hwid-6.3.0.301\\res\\values-b+my+Qaag\\values-b+my+Qaag.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "104",
+                        "endOffsets": "155"
+                    },
+                    "to": {
+                        "startLines": "7",
+                        "startColumns": "4",
+                        "startOffsets": "968",
+                        "endColumns": "104",
+                        "endOffsets": "1068"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\Beilong Tang\\.gradle\\caches\\transforms-2\\files-2.1\\474990db08e2ebc83d194a5c74ffa872\\ui-6.4.0.302\\res\\values-b+my+Qaag\\values-b+my+Qaag.xml",
+                    "from": {
+                        "startLines": "2,3,4,5,6",
+                        "startColumns": "4,4,4,4,4",
+                        "startOffsets": "55,253,582,652,899",
+                        "endColumns": "197,328,69,246,68",
+                        "endOffsets": "248,577,647,894,963"
+                    }
+                }
+            ]
+        }
+    ]
+}

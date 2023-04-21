@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.huawei.demo.health;
+package com.cuhk.fedcampus.health.health;
 
 import java.util.ArrayList;
 
@@ -25,7 +25,7 @@ import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.huawei.demo.health.auth.HealthKitAuthActivity;
+import com.cuhk.fedcampus.health.health.auth.HealthKitAuthActivity;
 import com.huawei.health.demo.R;
 import com.huawei.hmf.tasks.OnCompleteListener;
 import com.huawei.hmf.tasks.Task;
