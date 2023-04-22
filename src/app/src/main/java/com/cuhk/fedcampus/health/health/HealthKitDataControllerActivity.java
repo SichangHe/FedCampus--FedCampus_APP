@@ -77,6 +77,7 @@ public class HealthKitDataControllerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health_datacontroller);
+        System.out.println(1111);
         context = this;
         logInfoView = (TextView) findViewById(R.id.data_controller_log_info);
         logInfoView.setMovementMethod(ScrollingMovementMethod.getInstance());
@@ -260,7 +261,7 @@ public class HealthKitDataControllerActivity extends AppCompatActivity {
         Date startDate = dateFormat.parse("2020-08-26 09:00:00");
         Date endDate = dateFormat.parse("2020-08-26 09:05:00");
 
-        // 2. Build the condition-based query objec
+        // 2. Build the condition-based query object
         ReadOptions readOptions = new ReadOptions.Builder().read(DataType.DT_CONTINUOUS_STEPS_DELTA)
             .setTimeRange(startDate.getTime(), endDate.getTime(), TimeUnit.MILLISECONDS)
             .build();
@@ -271,12 +272,14 @@ public class HealthKitDataControllerActivity extends AppCompatActivity {
         // 4. Calling the data controller to query the sampling dataset is an asynchronous operation.
         // Therefore, a listener needs to be registered to monitor whether the data query is successful or not.
         readReplyTask.addOnSuccessListener(readReply -> {
+            System.out.println(readReply);
             logger("Success read an SampleSets from HMS core");
             for (SampleSet sampleSet : readReply.getSampleSets()) {
                 showSampleSet(sampleSet);
             }
             logger(SPLIT);
-        }).addOnFailureListener(e -> printFailureMessage(e, "read"));
+        })
+                .addOnFailureListener(e -> printFailureMessage(e, "read"));
     }
 
     /**

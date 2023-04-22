@@ -26,7 +26,7 @@
             android:name="com.huawei.hms.client.appid"
             android:value="107416543" />
 
-        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitMainActivity">
+        <activity android:name="com.cuhk.fedcampus.health.health.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />

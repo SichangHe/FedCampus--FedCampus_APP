@@ -5,6 +5,8 @@
     android:layout_height="match_parent"
     tools:context="com.cuhk.fedcampus.health.health.HealthKitMainActivity">
 
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -12,11 +14,11 @@
         android:orientation="vertical">
 
         <TextView
-            android:gravity="center"
-            android:textSize="@android:dimen/app_icon_size"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Health Kit" />
+            android:gravity="center"
+            android:text="Health Kit"
+            android:textSize="@android:dimen/app_icon_size" />
 
         <ScrollView
             android:layout_width="match_parent"
@@ -39,15 +41,16 @@
 
                     <TextView
                         android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
+                        android:layout_height="101dp"
                         android:text="@string/login_info" />
 
                     <Button
+                        android:id="@+id/login_button"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:onClick="onLoginClick"
                         android:text="Login"
-                        android:textAllCaps="false"
-                        android:onClick="onLoginClick" />
+                        android:textAllCaps="false" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -58,16 +61,18 @@
                     android:weightSum="1">
 
                     <TextView
+                        android:id="@+id/abc"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/data_controller" />
 
                     <Button
+                        android:id="@+id/data"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:onClick="hihealthDataControllerOnclick"
                         android:text="DataController"
-                        android:textAllCaps="false"
-                        android:onClick="hihealthDataControllerOnclick" />
+                        android:textAllCaps="false" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -163,12 +168,31 @@
                         android:text="@string/cancel_scope" />
 
                     <Button
+                        android:id="@+id/fed_login"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:onClick="cancelScope"
-                        android:text="Cancel Scope"
-                        android:textAllCaps="false" />
+                        android:onClick="testOnClick"
+                        android:text="@string/fed_login" />
+
                 </LinearLayout>
+
+                <Button
+                    android:id="@+id/logout_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:onClick="cancelScope"
+                    android:text="Cancel Scope"
+                    android:textAllCaps="false" />
+
+
+                <androidx.viewpager.widget.ViewPager
+                    android:layout_width="355dp"
+                    android:layout_height="455dp"
+                    android:id = "@+id/viewpager"
+                    />
+
+
+
             </LinearLayout>
         </ScrollView>
 

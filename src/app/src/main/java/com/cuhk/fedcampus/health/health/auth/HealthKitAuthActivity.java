@@ -17,6 +17,7 @@
 package com.cuhk.fedcampus.health.health.auth;
 
 import java.util.Locale;
+import java.util.Set;
 
 import android.app.Activity;
 import android.content.Context;
@@ -29,6 +30,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.cuhk.fedcampus.health.utils.GetCookie;
+
 import androidx.annotation.Nullable;
 
 import com.huawei.health.demo.R;
@@ -37,6 +40,7 @@ import com.huawei.hms.hihealth.HuaweiHiHealth;
 import com.huawei.hms.hihealth.SettingController;
 import com.huawei.hms.hihealth.data.Scopes;
 import com.huawei.hms.hihealth.result.HealthKitAuthResult;
+import com.huawei.hms.support.api.entity.auth.Scope;
 import com.huawei.hms.support.api.entity.common.CommonConstant;
 
 /**
@@ -140,6 +144,10 @@ public class HealthKitAuthActivity extends Activity {
             // Check whether the authorization result is successful.
             if (result.isSuccess()) {
                 Log.i(TAG, "authorization success");
+                if (result.getAuthAccount() != null && result.getAuthAccount().getAuthorizedScopes() != null) {
+                    Set <Scope> authorizedScopes = result.getAuthAccount().getAuthorizedScopes();
+                    Log.i(TAG, "authorization scope size " + authorizedScopes.size());
+                }
                 buildSuccessView();
             } else {
                 Log.w(TAG, "authorization fail, errorCode:" + result.getErrorCode());

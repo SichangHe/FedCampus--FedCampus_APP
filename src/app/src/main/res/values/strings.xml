@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Health Kit Sample Code</string>
+    <string name="app_name">FedCampus</string>
     <string name="login_info">Touch Login to complete login and authorization, and then use other buttons to try the related API functions.Note: If the login dialog box is not displayed, change the package name, app ID, and configure the signature file by referring to the developer guide on the official website.</string>
     <string name="cancel_scope">Here we provide the example to cancel scope, if you call this, you need re-login and authorize</string>
     <string name="data_controller">Managing historical fitness and health data</string>
@@ -53,4 +53,7 @@
     <string name="healthrecord_record_Get">get health records</string>
     <string name="healthrecord_record_Delete">delete health records</string>
     <string name="healthrecord_controller">Managing Health Controller</string>
+    <string name="fed_login">FedCampus</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
