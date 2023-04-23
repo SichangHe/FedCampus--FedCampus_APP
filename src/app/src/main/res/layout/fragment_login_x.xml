@@ -4,7 +4,7 @@
     android:layout_height="match_parent"
 
     android:orientation="vertical"
-    tools:context="com.cuhk.fedcampus.health.health.fragment.RecordFragment">
+    tools:context="com.cuhk.fedcampus.health.health.fragment.ReportFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout

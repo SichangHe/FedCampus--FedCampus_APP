@@ -7,7 +7,7 @@ import androidx.viewpager2.adapter.FragmentStateAdapter;
 
 import com.cuhk.fedcampus.health.health.fragment.HomeFragment;
 import com.cuhk.fedcampus.health.health.fragment.PostFragment;
-import com.cuhk.fedcampus.health.health.fragment.RecordFragment;
+import com.cuhk.fedcampus.health.health.fragment.ReportFragment;
 
 public class MyViewPagerAdapter extends FragmentStateAdapter {
 
@@ -20,13 +20,13 @@ public class MyViewPagerAdapter extends FragmentStateAdapter {
     public Fragment createFragment(int position){
         switch (position){
             case 0:
-                return new RecordFragment();
+                return new ReportFragment();
             case 1:
                 return new PostFragment();
             case 2:
                 return new HomeFragment();
             default:
-                return new RecordFragment();
+                return new ReportFragment();
         }
     }
 
