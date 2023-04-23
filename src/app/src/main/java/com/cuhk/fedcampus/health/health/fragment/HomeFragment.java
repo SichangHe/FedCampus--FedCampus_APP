@@ -36,6 +36,8 @@ public class HomeFragment extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
 
+    private static boolean isLogin = false;
+
     private SettingController mSettingController;
 
     private Button data_button;
@@ -98,6 +100,9 @@ public class HomeFragment extends Fragment {
         login_button.setOnClickListener((new View.OnClickListener(){
             @Override
             public void onClick(View v){
+                System.out.println(isLogin);
+
+                isLogin=true;
                 System.out.println(111122333);
                 Intent intent = new Intent(getActivity(), HealthKitAuthActivity.class);
                 startActivity(intent);
@@ -133,40 +138,5 @@ public class HomeFragment extends Fragment {
         return view;
 
 
-    }
-
-    private void requestAuth() {
-        String[] scopes = new String[] {
-                // 查看和存储HUAWEI Health Kit中的步数
-                Scopes.HEALTHKIT_STEP_READ, Scopes.HEALTHKIT_STEP_WRITE,
-                // 查看和存储HUAWEI Health Kit中的身高体重
-                Scopes.HEALTHKIT_HEIGHTWEIGHT_READ, Scopes.HEALTHKIT_HEIGHTWEIGHT_WRITE,
-                // 查看和存储HUAWEI Health Kit中的心率数据
-                Scopes.HEALTHKIT_HEARTRATE_READ, Scopes.HEALTHKIT_HEARTRATE_WRITE
-        };
-
-        // 获取授权流程Intent，true表示开启运动健康App授权流程，false表示不开启
-        Intent intent = mSettingController.requestAuthorizationIntent(scopes, true);
-
-        // 打开授权流程页面
-        Log.i(TAG, "start authorization activity");
-        startActivityForResult(intent, REQUEST_AUTH);
-
-    }
-
-    private void initService() {
-        // 请注意此处的this为Activity对象
-        mSettingController = HuaweiHiHealth.getSettingController(getActivity());
-    }
-
-
-    /**
-     * Data Controller
-     *
-     * @param view UI object
-     */
-    public void hihealthDataControllerOnclick(View view) {
-        Intent intent = new Intent(this.getActivity(), HealthKitDataControllerActivity.class);
-        startActivity(intent);
     }
 }

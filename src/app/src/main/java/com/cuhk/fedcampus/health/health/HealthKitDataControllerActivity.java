@@ -77,7 +77,6 @@ public class HealthKitDataControllerActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_health_datacontroller);
-        System.out.println(1111);
         context = this;
         logInfoView = (TextView) findViewById(R.id.data_controller_log_info);
         logInfoView.setMovementMethod(ScrollingMovementMethod.getInstance());

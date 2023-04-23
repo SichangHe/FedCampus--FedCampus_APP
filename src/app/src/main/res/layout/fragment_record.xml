@@ -1,13 +1,51 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+
+    android:orientation="vertical"
     tools:context="com.cuhk.fedcampus.health.health.fragment.RecordFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="125dp"
+            android:layout_height="43dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="144dp"
+            android:text="Report"
+            android:textColor="#625EDD"
+            android:textColorLink="#AA1717"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/exercise_report"
+            android:layout_width="136dp"
+            android:layout_height="97dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="76dp"
+            android:text="Exercise Report"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="129dp"
+            android:layout_height="96dp"
+            android:layout_marginTop="77dp"
+            android:layout_marginEnd="56dp"
+            android:text="Health Report"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

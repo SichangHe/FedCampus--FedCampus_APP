@@ -41,6 +41,7 @@
         <activity android:name="com.cuhk.fedcampus.health.health.HealthKitSettingControllerActivity" />
         <activity android:name="com.cuhk.fedcampus.health.health.auth.HealthKitAuthActivity" />
         <activity android:name="com.cuhk.fedcampus.health.health.HealthKitHealthRecordControllerActivity" />
+        <activity android:name="com.cuhk.fedcampus.health.health.Login" />
 
         <service android:name="com.cuhk.fedcampus.health.health.PersistService">
             <intent-filter android:priority="1000">
