@@ -11,15 +11,16 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.cuhk.fedcampus.health.health.HealthKitDataControllerActivity;
+import com.cuhk.fedcampus.health.health.HealthReportActivity;
 import com.cuhk.fedcampus.health.health.Login;
 import com.huawei.health.demo.R;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link RecordFragment#newInstance} factory method to
+ * Use the {@link ReportFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class RecordFragment extends Fragment {
+public class ReportFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -32,7 +33,7 @@ public class RecordFragment extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public RecordFragment() {
+    public ReportFragment() {
         // Required empty public constructor
     }
 
@@ -45,8 +46,8 @@ public class RecordFragment extends Fragment {
      * @return A new instance of fragment RecordFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static RecordFragment newInstance(String param1, String param2) {
-        RecordFragment fragment = new RecordFragment();
+    public static ReportFragment newInstance(String param1, String param2) {
+        ReportFragment fragment = new ReportFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -72,18 +73,15 @@ public class RecordFragment extends Fragment {
 
         Button exerciseRecord = (Button) view.findViewById(R.id.exercise_report);
 
-        exerciseRecord.setOnClickListener(new View.OnClickListener()
-        {
+        exerciseRecord.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View v)
-            {
+            public void onClick(View v) {
                 // do something
-                if (!isLogIn){
+                if (!isLogIn) {
 //            login
                     Intent intent = new Intent(getActivity(), Login.class);
                     startActivity(intent);
-                }
-                else{
+                } else {
 //            redirect to the Huawei Page
                     Intent intent = new Intent(getActivity(), HealthKitDataControllerActivity.class);
                     startActivity(intent);
@@ -93,9 +91,20 @@ public class RecordFragment extends Fragment {
         });
 
 
+        Button healthReportButton = (Button) view.findViewById(R.id.health_report);
+
+        healthReportButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent intent = new Intent(getActivity(), HealthReportActivity.class);
+                startActivity(intent);
 
 
+            }
+        });
 
-        return view ;
+
+        return view;
     }
 }

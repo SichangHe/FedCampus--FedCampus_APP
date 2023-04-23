@@ -12,7 +12,7 @@
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
     <uses-permission android:name="android.permission.WAKE_LOCK" />
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -42,6 +42,7 @@
         <activity android:name="com.cuhk.fedcampus.health.health.auth.HealthKitAuthActivity" />
         <activity android:name="com.cuhk.fedcampus.health.health.HealthKitHealthRecordControllerActivity" />
         <activity android:name="com.cuhk.fedcampus.health.health.Login" />
+        <activity android:name="com.cuhk.fedcampus.health.health.HealthReportActivity" />
 
         <service android:name="com.cuhk.fedcampus.health.health.PersistService">
             <intent-filter android:priority="1000">
