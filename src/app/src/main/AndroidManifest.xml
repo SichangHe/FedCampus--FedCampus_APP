@@ -7,7 +7,6 @@
     <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
     <uses-permission android:name="android.permission.BLUETOOTH" />
     <uses-permission android:name="android.permission.BODY_SENSORS" />
-
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.REQUEST_IGNORE_BATTERY_OPTIMIZATIONS" />
@@ -21,12 +20,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".ExerciseReportActivity"
+            android:exported="false"
+            android:label="@string/title_activity_exercise_report"
+            android:theme="@style/AppTheme.NoActionBar" />
 
         <meta-data
             android:name="com.huawei.hms.client.appid"
             android:value="107416543" />
 
-        <activity android:name="com.cuhk.fedcampus.health.health.MainActivity">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.VIEW" />
                 <action android:name="android.intent.action.MAIN" />
@@ -34,22 +38,21 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".HealthKitDataControllerActivity" />
+        <activity android:name=".HealthKitAutoRecorderControllerActivity" />
+        <activity android:name=".HealthKitActivityRecordControllerActivity" />
+        <activity android:name=".HealthKitSettingControllerActivity" />
+        <activity android:name=".auth.HealthKitAuthActivity" />
+        <activity android:name=".HealthKitHealthRecordControllerActivity" />
+        <activity android:name=".Login" />
+        <activity android:name=".HealthReportActivity" />
 
-        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitDataControllerActivity" />
-        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitAutoRecorderControllerActivity" />
-        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitActivityRecordControllerActivity" />
-        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitSettingControllerActivity" />
-        <activity android:name="com.cuhk.fedcampus.health.health.auth.HealthKitAuthActivity" />
-        <activity android:name="com.cuhk.fedcampus.health.health.HealthKitHealthRecordControllerActivity" />
-        <activity android:name="com.cuhk.fedcampus.health.health.Login" />
-        <activity android:name="com.cuhk.fedcampus.health.health.HealthReportActivity" />
-
-        <service android:name="com.cuhk.fedcampus.health.health.PersistService">
+        <service android:name=".PersistService">
             <intent-filter android:priority="1000">
                 <action android:name="HealthKitService" />
             </intent-filter>
         </service>
-        <service android:name="com.cuhk.fedcampus.health.health.ActivityRecordForegroundService" />
+        <service android:name=".ActivityRecordForegroundService" />
     </application>
 
 </manifest>

@@ -11,9 +11,20 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.cuhk.fedcampus.health.health.HealthKitDataControllerActivity;
-import com.cuhk.fedcampus.health.health.HealthReportActivity;
 import com.cuhk.fedcampus.health.health.Login;
+import com.cuhk.fedcampus.health.utils.UnAuth;
 import com.huawei.health.demo.R;
+import com.huawei.hms.common.api.Response;
+import com.loopj.android.http.AsyncHttpClient;
+import com.loopj.android.http.AsyncHttpResponseHandler;
+import com.loopj.android.http.PersistentCookieStore;
+import com.loopj.android.http.ResponseHandlerInterface;
+
+import java.util.List;
+
+import cz.msebera.android.httpclient.Header;
+import cz.msebera.android.httpclient.client.ResponseHandler;
+import cz.msebera.android.httpclient.cookie.Cookie;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -90,15 +101,34 @@ public class ReportFragment extends Fragment {
             }
         });
 
-
         Button healthReportButton = (Button) view.findViewById(R.id.health_report);
 
         healthReportButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent intent = new Intent(getActivity(), HealthReportActivity.class);
-                startActivity(intent);
+                AsyncHttpClient myClient = new AsyncHttpClient();
+                PersistentCookieStore myCookieStore = new PersistentCookieStore(getActivity().getApplicationContext());
+                myClient.setCookieStore(myCookieStore);
+                List<Cookie> a = myCookieStore.getCookies();
+//                for (int i = 0 ; i < a.size(); i ++){
+//                    Cookie c = a.get(i);
+//                    c.getName();
+//                }
+                myClient.get("http://dku-vcm-2630.vm.duke.edu:8005/api/test", new AsyncHttpResponseHandler() {
+                    @Override
+                    public void onSuccess(int statusCode, Header[] headers, byte[] responseBody) {
+                        System.out.println("success");
+
+                    }
+
+                    @Override
+                    public void onFailure(int statusCode, Header[] headers, byte[] responseBody, Throwable error) {
+                        Intent i = new Intent(getActivity(), Login.class);
+                        startActivity(i);
+                    }
+                } );
+
 
 
             }

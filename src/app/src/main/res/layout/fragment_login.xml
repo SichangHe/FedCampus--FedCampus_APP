@@ -2,34 +2,48 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:gravity="center_vertical"
 
     android:orientation="vertical"
     tools:context="com.cuhk.fedcampus.health.health.fragment.ReportFragment">
 
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FedCampus"
+        android:textSize="50dp"
+        android:layout_gravity="center">
+
+    </TextView>
+
+
     <!-- TODO: Update blank fragment layout -->
     <LinearLayout
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="姓名："/>
+            android:textSize="20dp"
+            android:text="Email:"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/name"/>
+            android:id="@+id/email"/>
     </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="vertical">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="30dp"
-            android:text="密码："/>
+            android:textSize="20dp"
+            android:text="Password:"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -38,22 +52,18 @@
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        >
         <Button
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="登录"
+            android:text="Login"
             android:id="@+id/login"/>
         <Button
-            android:layout_width="200dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="取消"
+            android:text="CANCEL"
             android:id="@+id/cancel"/>
     </LinearLayout>
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="点取消这段文字会变绿！"
-        android:id="@+id/bianse"
-        android:textSize="30dp"/>
 </LinearLayout>
